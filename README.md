@@ -1,4 +1,4 @@
-# CMT Arc Angle
+﻿# CMT Arc Angle
 
 VB.NET console program for measuring the CMT arc angle from welding images.
 
@@ -60,3 +60,19 @@ root_y = 529.3
 wire_angle = 1.55
 roi = 670,60,1010,700
 ```
+
+## Python Version
+
+A Python implementation of the same algorithm is also included:
+
+```text
+python/cmt_arc_angle.py
+```
+
+Run it with:
+
+```bat
+python python\cmt_arc_angle.py "D:\path\image.bmp" --threshold 210 --root-x 872 --root-y 529.3 --wire-angle 1.55 --roi 670,60,1010,700
+```
+
+The VB.NET and Python versions use the same measurement definition and should produce the same result when the same threshold, ROI, wire-tip coordinates, and wire-axis angle are used.
