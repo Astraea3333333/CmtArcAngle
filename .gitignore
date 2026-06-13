@@ -1,0 +1,7 @@
+bin/
+obj/
+*.user
+*.suo
+*.tmp
+*_arc_angle_measured*.png
+*_arc_angle_result*.json
